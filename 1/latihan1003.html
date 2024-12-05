@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="viewTEXT">Tampilkan Text</button>
+    <button id="hideTEXT">Sembunyikan Text</button>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, corporis voluptates iure ex cumque quo eveniet autem nobis aut odio modi tenetur neque repellendus voluptas aliquam deserunt magni magnam. Culpa delectus labore nam, error veniam maxime ipsam repellat dolore fugiat quaerat nostrum cumque ex! Dolores tenetur eum ipsa distinctio non delectus, quidem explicabo id. Obcaecati, pariatur aliquid. Consectetur, tempora vero. Est expedita similique quas repellat quod officiis accusantium vero ut saepe veritatis animi dolorum voluptatum perspiciatis cumque nostrum at modi, possimus dolore tenetur. Aliquam maiores laudantium deleniti commodi harum nulla mollitia, sint odit labore dicta tempore reprehenderit debitis reiciendis necessitatibus quam similique at illo! Aperiam totam ducimus quis, eos veritatis deserunt est debitis numquam, quo maxime accusamus expedita alias? Eius saepe quaerat fugit assumenda quidem odit accusantium repellendus accusamus incidunt et illo, eum atque laboriosam? Distinctio ad ullam cupiditate veniam explicabo natus doloribus dignissimos rerum modi a aliquid officia sit est laboriosam id inventore delectus cum repellendus, dolorum atque minima. Corrupti molestias quam esse nostrum enim maxime, iusto laborum facilis neque quia aperiam temporibus deserunt animi recusandae magnam eos iure explicabo fugiat eaque, in id repudiandae fugit unde labore. Veritatis aliquam nihil ullam mollitia ratione nemo qui iste quidem quod harum dicta ad aperiam ut voluptatem, autem modi odio facilis. Perferendis quia quidem eaque eligendi minus natus nostrum corrupti quo nemo maxime quis, ducimus quibusdam, blanditiis laboriosam. Deserunt voluptas alias dolorem sed maxime atque facere doloremque, neque, rem perspiciatis tenetur tempora ipsam saepe reprehenderit? Odit quisquam deserunt ipsum modi expedita excepturi, quae neque quod voluptates rerum quasi dignissimos accusamus repudiandae hic dolorem assumenda, accusantium eum aliquid? Unde, aperiam magnam nihil dolorem qui, molestias quam quae obcaecati impedit, ad suscipit ex dolore. Optio, eligendi error. Velit atque expedita necessitatibus dolores debitis similique quibusdam quae excepturi adipisci maxime quaerat blanditiis, architecto aspernatur.</p>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $('p').hide()
+            $('#hideTEXT').hide()
+
+            $('#viewTEXT').on('click' ,function(){
+                $('p').show(500)
+                $(this).hide()
+                $('#hideTEXT').show()
+            })
+
+            $('#hideTEXT').on('click' ,function(){
+                $('p').hide(500)
+                $(this).hide()
+                $('#viewTEXT').show()
+            })
+        })
+    </script>
+</body>
+
+</html>
